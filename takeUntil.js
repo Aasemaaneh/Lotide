@@ -18,24 +18,28 @@
 //        console.log(`🛑🛑🛑 Assertion Failed: [${array1}] !== [${array2}]`);
 //        }
 //};
- 
-const map = function(array, callback) {
-  const results = [];
+  
+const takeUntil = function(array, callback) {
+  const result = [];
   for (let item of array) {
-    results.push(callback(item));
+    if (callback(item)) {
+      return result;
+    }
+     result.push(item);
   }
-  return results;
+  return result;
 };
-
+  
 // Test cases
-//const words = ["ground", "control", "to", "major", "tom"];
+//const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
+//const results1 = takeUntil(data1, x => x < 0);
+//assertArraysEqual(results1, [1, 2, 5, 7, 2]);
 //
-//const results1 = map(words, word => word[0]);
-//assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
-//const results2 = map(words, word => Math.round(Math.sqrt(word.length)));
-//assertArraysEqual(results2, [ 2, 3, 1, 2, 2 ]);
-//const results3 = map(words, word => word.toUpperCase() + " : " + word);
-//assertArraysEqual(results3, ['GROUND : ground','CONTROL : control','TO : to','MAJOR : major','TOM : tom'
-//]);
- 
-module.exports = map;
+//console.log('---');
+//
+//const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
+//const results2 = takeUntil(data2, x => x === ',');
+//assertArraysEqual(results2, ["I've", "been", "to", "Hollywood"]);
+
+module.exports = takeUntil;
+  
