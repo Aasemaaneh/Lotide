@@ -5,8 +5,8 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed:  ${actual}  !==  ${expected}`);
   }
 };
-  
+module.exports = assertEqual;
 // Test cases
-assertEqual("LHL", "Bootcamp"); // Assertion Failed: Lighthouse Labs !== Bootcamp
-assertEqual(3+4, 5+2); // Assertion Passed: 1 === 1
+//assertEqual("LHL", "Bootcamp"); // Assertion Failed: Lighthouse Labs !== Bootcamp
+//assertEqual(3+4, 5+2); // Assertion Passed: 1 === 1
   
