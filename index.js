@@ -8,6 +8,8 @@ const findKeyByValue = require('./findKeyByValue');
 const map = require('./map');
 const takeUntil = require('./takeUntil');
 const findKey = require('./findKey');
+const head = require('./head');
+const tail = require('./tail');
 
 
 
@@ -37,5 +39,7 @@ const lotide = {
     map,
     takeUntil,
     findKey,
+    head,
+    tail,
   }
 module.exports = lotide;
