@@ -34,70 +34,39 @@ The following functions are currently implemented:
 
 The following functions are currently implemented:
 
-* `assertEqual(value1, value2)`
+* `assertEqual(value1, value2)`: Write a function that takes in 2 values and returns true if they are equal and false otherwise.
 
-Write a function that takes in 2 values and returns true if they are equal and false otherwise.
+* `assertEqualTemplate(value1, value2)`: Write an updated Assert Equal Function that uses template literals.
 
-* `assertEqualTemplate(value1, value2)`
+* `head(array)`: Write a function that takes in an array and returns the first element in the array.
 
-Write an updated Assert Equal Function that uses template literals.
+* `tail(array)`: Write a function that takes in an array and returns everything except the first element of the array.
 
-* `head(array)`
+* `eqArrays(array1, array2)`: Write a function that takes in 2 arrays and returns true if the arrays are equal and false otherwise.
 
-Write a function that takes in an array and returns the first element in the array.
+* `assertArraysEqual(array1, array2)`: Write a function that prints an appropriate message after comparing the two arrays.
 
-* `tail(array)`
+* `without(sourceArray, itemsToRemoveArray)`: Write a function that takes in a source array and an itemsToRemove array and returns only the items from the source array that are not in the itemsToRemove array.
 
-Write a function that takes in an array and returns everything except the first element of the array.
+* `flatten(array)`: Write a function that takes in an array that contains elements including nested array of elements and returns a flattened version of the array.
 
-* `eqArrays(array1, array2)`
+* `middle(array)`: Write a function that takes in an array and returns the middle most element of the array.
 
-Write a function that takes in 2 arrays and returns true if the arrays are equal and false otherwise.
+* `countOnly(collection, itemsToCount)`: Write a function that takes in a collection of items and returns a specific subset of those items.
 
-* `assertArraysEqual(array1, array2)`
+* `countLetters(sentence)`: Write a function that takes in a sentence and returns a count of each of the letters in the sentence.
 
-Write a function that prints an appropriate message after comparing the two arrays.
+* `letterPositions(string)`: Write a function that takes in a string and returns all indices of letter positions in the string.
 
-* `without(sourceArray, itemsToRemoveArray)`
+* `findKeyByValue(object, value)`: Write a function that takes in an object and a value and returns the first key that corresponds to that value.
 
-Write a function that takes in a source array and an itemsToRemove array and returns only the items from the source array that are not in the itemsToRemove array.
+* `eqObjects(object1, object2)`: Write a function that takes in 2 objects and returns true if they are equal and false otherwise.
 
-* `flatten(array)`
+* `assertObjectsEqual(object1, object2)`: Write a function that takes in 2 objects and returns true if they are equal and false otherwise.
 
-Write a function that takes in an array that contains elements including nested array of elements and returns a flattened version of the array.
+* `map(array, callback)`: Write a function that takes in an array and a callback and returns a new array based on the results of the callback on each item in the array.
 
-* `middle(array)`
+* `takeUntil(array, callback)`: Write a function that takes in an array and callback and returns a slice of the array based on the criteria specified in the callback.
 
-Write a function that takes in an array and returns the middle most element of the array.
+* `findKey(object, callback)`: Write a function that takes in an object and callback and returns the first key that meets the criteria specified in the callback.
 
-* `countOnly(collection, itemsToCount)`
-
-Write a function that takes in a collection of items and returns a specific subset of those items.
-
-* `countLetters(sentence)`
-
-Write a function that takes in a sentence and returns a count of each of the letters in the sentence.
-
-* `letterPositions(string)`
-
-Write a function that takes in a string and returns all indices of letter positions in the string.
-
-* `findKeyByValue(object, value)`
-
-Write a function that takes in an object and a value and returns the first key that corresponds to that value.
-
-* `eqObjects(object1, object2)`
-
-Write a function that takes in 2 objects and returns true if they are equal and false otherwise.
-
-* `assertObjectsEqual(object1, object2)`
-
-Write a function that takes in 2 objects and returns true if they are equal and false otherwise.
-
-* `map(array, callback)`
-
-Write a function that takes in an array and a callback and returns a new array based on the results of the callback on each item in the array.
-
-* `takeUntil(array, callback)`
-
-Write a function that takes in an array and callback and returns a slice of the array based on the criteria specified in the callback.
